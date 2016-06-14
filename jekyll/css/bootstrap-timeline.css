@@ -15,7 +15,7 @@
   margin-left: -1.5px;
 }
 .timeline > li {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   position: relative;
 }
 .timeline > li:before,
@@ -126,5 +126,5 @@
   margin-bottom: 0;
 }
 .timeline-body > p + p {
-  margin-top: 5px;
+  margin-top: 0px;
 }
