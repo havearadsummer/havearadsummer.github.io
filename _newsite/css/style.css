@@ -1103,3 +1103,9 @@
 			display: inline-block;
 			width: 5em;
 		}
+
+
+	/* Custom added css */
+	.QandA {
+		text-align: left;
+	}
