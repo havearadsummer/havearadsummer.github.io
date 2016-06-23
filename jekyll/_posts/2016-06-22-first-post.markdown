@@ -2,9 +2,9 @@
 layout: post
 title:  "Intro"
 date:   2016-06-22 18:14:00
-permalink: /first-post.html
 author: Ginny
 ---
+
 <span class="image featured"></span>
 It was a really challenging (first world challenging) year for our family.  After living in Santa Barbara and building a life there on our own we made the very difficult decision to leave and move back to our home town of Newport Beach (I said it was a first world type of challenging).  The decision came on the heels of what can only be described as a complete shit storm of family “happenings”.  Sometimes it felt like I was watching one of those independent films that, while you appreciate the gut wrenching performances of say, Michelle Williams or Ryan Gosling, or the artistic vision of Lars Von Trier, you’d prefer to keep the drama on the silver screen.  Changes at work, deaths, divorces, and, I shit you not, a fire.  Had it started raining frogs a year and a half ago I surely would have gone for the pint of Ben and Jerry’s in the freezer and high tailed it to the bunker.  It was just dramz to the max.  And we hate the dramz.  And the dramz back at home coincided with our kids totally finding their groove in Santa Barbara and making what we can only hope will be life - long buddies.  It was a groove that took a while too.  So to tear them away from that weighed really heavily on the heart.  
 
