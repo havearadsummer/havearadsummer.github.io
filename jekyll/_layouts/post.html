@@ -4,6 +4,7 @@ layout: default
 
     <article id="main">
   <header class="special container">
+    <span class="icon fa-file-text-o"></span>
     <h2 class="post-title">{{ page.title }}</h2>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
@@ -11,7 +12,7 @@ layout: default
   <section class="style4 wrapper container">
     {{ content }}
   </section>
-    
+
     <footer>
         {% if page.previous %}
         <a href="{{ page.previous.url }}" class="post-prev">&larr; Previous post</a> {% endif %}
@@ -19,4 +20,3 @@ layout: default
         <a href="{{ page.next.url }}" class="post-next">Next post &rarr;</a> {% endif %}
     </footer>
 </article>
-
