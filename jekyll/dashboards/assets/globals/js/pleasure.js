@@ -7,8 +7,8 @@ var Pleasure = {
 		rippledButtons: true,
 
 		paths: {
-			images: "../../assets/globals/img",
-			css: "../assets/globals/css",
+			images: "assets/globals/img",
+			css: "assets/globals/css",
 			plugins: "assets/globals/plugins"
 		},
 
@@ -569,4 +569,3 @@ var Pleasure = {
 	}
 
 };
-
