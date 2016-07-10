@@ -15134,3 +15134,33 @@ button.toast-close-button {
 				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
 					border: solid 1px;
 				}
+        /* Footer */
+
+        #footer {
+        	background: #e8eef4;
+        	color: #7c8081;
+        	padding: 5em 5em 10em 5em;
+        	text-align: center;
+        }
+
+        #footer .copyright {
+          font-size: 0.8em;
+          line-height: 1em;
+        }
+
+        #footer .copyright a {
+        	color: inherit;
+        }
+
+        #footer .copyright li {
+        	display: inline-block;
+        	margin-left: 1em;
+        	padding-left: 1em;
+        	border-left: dotted 1px;
+        }
+
+        	#footer .copyright li:first-child {
+        		margin: 0;
+        		padding: 0;
+        		border: 0;
+        	}
