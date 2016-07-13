@@ -1,17 +1,15 @@
 var Index = {
 
 	createNotification: function () {
-		setTimeout( function () {
-			Pleasure.handleToastrSettings(true, 'toast-bottom-left', false, 'info', true, '', 'You have 3 notifications.');
-		}, 3000);
+
 	},
 
-	createMap: function () {
+	createMap: function (latitude, longitude) {
 		var map;
 		var markers = [];
 
 		var mapOptions = {
-			center: new google.maps.LatLng(41.386469,2.175235),
+			center: new google.maps.LatLng(latitude,longitude),
 			zoom: 12,
 			zoomControl: false,
 			mapTypeControl: false,
@@ -58,71 +56,8 @@ var Index = {
 
 		var mapElement = document.getElementById('gmaps-dashboard');
 		var map = new google.maps.Map(mapElement, mapOptions);
-		var locations = [['Team Fox', 'undefined', 'undefined', 'undefined', 'undefined', 41.3850639, 2.1734034999999494, Pleasure.settings.paths.images+'/map-marker-ellipse-blue.png']];
+		var locations = [['Team Fox', 'undefined', 'undefined', 'undefined', 'undefined', latitude, longitude, Pleasure.settings.paths.images+'/map-marker-ellipse-blue.png']];
 
-		var input = (document.getElementById('pac-input'));
-		map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
-		var searchBox = new google.maps.places.SearchBox((input));
-
-		google.maps.event.addListener(searchBox, 'places_changed', function() {
-			var places = searchBox.getPlaces();
-
-			if (places.length == 0) {
-				return;
-			}
-			for (var i = 0, marker; marker = markers[i]; i++) {
-				marker.setMap(null);
-			}
-
-			// For each place, get the icon, place name, and location.
-			markers = [];
-			var bounds = new google.maps.LatLngBounds();
-			for (var i = 0, place; place = places[i]; i++) {
-				var image = {
-					url: place.icon,
-					size: new google.maps.Size(71, 71),
-					origin: new google.maps.Point(0, 0),
-					anchor: new google.maps.Point(17, 34),
-					scaledSize: new google.maps.Size(25, 25)
-				};
-
-				// Create a marker for each place.
-				var marker = new google.maps.Marker({
-					map: map,
-					icon: Pleasure.settings.paths.images+'/map-marker-ellipse-blue.png',
-					title: place.name,
-					position: place.geometry.location
-				});
-
-				markers.push(marker);
-				bounds.extend(place.geometry.location);
-			}
-			map.fitBounds(bounds);
-		});
-
-		google.maps.event.addListener(map, 'bounds_changed', function() {
-			var bounds = map.getBounds();
-			searchBox.setBounds(bounds);
-		});
-
-		for (i = 0; i < locations.length; i++) {
-			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1]; }
-			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2]; }
-			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3]; }
-				if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4]; }
-				if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7]; }
-					marker = new google.maps.Marker({
-						icon: markericon,
-						position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-						map: map,
-						title: locations[i][0],
-						desc: description,
-						tel: telephone,
-						email: email,
-						web: web
-					});
-				link = '';
-		}
 	},
 
 	createSalesChart: function () {
@@ -395,19 +330,15 @@ var Index = {
 	},
 
 	init: function () {
-		//this.createNotification();
-		this.createMap();
-		this.createSalesChart();
-		this.createBalanceChart();
-		this.createFollowersChart();
-		this.createStocksChart();
-		this.createSalesByYearChart();
-		this.createVisitors();
+		this.createNotification();
+		//this.createMap(41.386469,2.175235);
+		//this.createSalesChart();
+		//this.createBalanceChart();
+		//this.createFollowersChart();
+		//this.createStocksChart();
+		//this.createSalesByYearChart();
+		//this.createVisitors();
 
-		this.fakePageResponsive();
+		//this.fakePageResponsive();
 	}
 }
-
-
-
-

@@ -1,0 +1,257 @@
+---
+layout: dashboard
+latitude: 34.4145
+longitude: -119.7096637
+---
+
+		<div class="display-animation">
+
+			<div class="row image-row">
+
+				<div class="col-md-8">
+
+					<div class="row image-row">
+						<div class="col-sm-8">
+
+							<div class="card tile card-green card-weather bg-image material-animate"
+								style="background-image: url('/images/santabarbara/santabarbara.png');">
+								<div class="card-heading">
+								</div><!--.card-heading-->
+								<div class="card-body">
+									<div class="forecast-container forecast-container-dark">
+										<span class="temparature">75 <i class="wi wi-fahrenheit"></i></span>
+										<span class="place">Santa Barbara, CA</span>
+										<span class="forecast">June gloom, sunny days</span>
+									</div>
+								</div><!--.card-body-->
+								<div class="card-footer">
+									<div class="row">
+										<div class="col-xs-3 animate-item">
+											<ul>
+												<li>WED - 29 JUN</li>
+												<li><i class="wi wi-day-sunny-overcast"></i></li>
+												<li>75 <i class="wi wi-fahrenheit"></i></li>
+											</ul>
+										</div><!--.col-->
+										<div class="col-xs-3 animate-item">
+											<ul>
+												<li>THU - 30 JUN</li>
+												<li><i class="wi wi-day-sunny-overcast"></i></li>
+												<li>76 <i class="wi wi-fahrenheit"></i></li>
+											</ul>
+										</div><!--.col-->
+										<div class="col-xs-3 animate-item">
+											<ul>
+												<li>FRI - 1 JUL</li>
+												<li><i class="wi wi-day-sunny-overcast"></i></li>
+												<li>78 <i class="wi wi-fahrenheit"></i></li>
+											</ul>
+										</div><!--.col-->
+										<div class="col-xs-3 animate-item">
+											<ul>
+												<li>SAT - 2 JUL</li>
+												<li><i class="wi wi-day-sunny-overcast"></i></li>
+												<li>75 <i class="wi wi-fahrenheit"></i></li>
+											</ul>
+										</div><!--.col-->
+									</div><!--.row-->
+								</div><!--.card-footer-->
+							</div><!--.card-->
+
+						</div><!--.col-->
+						<div class="col-sm-4">
+
+							<div class="card card-deep-purple card-image bg-image"
+							style="background-image: url('/images/santabarbara/skate.jpg')">
+							</div><!--.card-->
+
+							<div class="card card-deep-purple card-image bg-image"
+							style="background-image: url('/images/santabarbara/iggysquishy.jpg')">
+								<div class="context">
+									<span class="text-title">Iggy &amp; Squishy</span>
+								</div>
+							</div><!--.card-->
+
+						</div><!--.col-->
+					</div><!--.row-->
+
+					<div class="row image-row">
+						<div class="col-md-12">
+							<div class="card card-video card-video-modal card-player-blue-grey">
+								<style>
+										.bg-image-sb:before { background-image: url('/images/santabarbara/beachday.png')}
+								</style>
+								<div class="bg-image bg-image-sb"></div>
+								<div class="card-body">
+									<a href="#" class="play-button-container" data-toggle="modal" data-target="#videojs-modal-2">
+										<div class="play-button"></div>
+									</a>
+								</div><!--.card-body-->
+
+								<!-- In order to use different colors, write modal codes in card window -->
+								<!-- If you want the video starts automatically after modal window shown, use data-modal-autoplay="true" in video markup -->
+								<div class="modal fade video-js-modal" id="videojs-modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-body">
+												<video id="videojs4" class="video-js video-js-responsive vjs-default-skin vjs-big-play-centered" controls preload="none" poster="/images/SantaBarbara/beachday.png" data-modal-autoplay="false">
+													<source src="/images/santabarbara/beachday.mp4" type="video/mp4">
+													<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+												</video>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div><!--.modal-->
+								<!-- End of Modal -->
+
+							</div><!--.card-->
+						</div>
+					</div><!--.row-->
+					<div class="row image-row">
+						<div class="col-md-4">
+							<div class="card card-deep-purple card-image bg-image"
+							style="background-image: url('/images/santabarbara/hoodrats.jpg')">
+							</div><!--.card-->
+						</div><!--.col-->
+						<div class="col-md-8">
+							<div class="card card-deep-purple card-image bg-image"
+							style="background-image: url('/images/santabarbara/icecream.jpg')">
+							</div><!--.card-->
+						</div><!--.col-->
+					</div><!--.row-->
+				</div><!--.col-->
+
+				<div class="col-md-4">
+
+					<div class="row image-row">
+						<div class="col-md-12">
+							<div class="card tile card-lime card-image material-animate">
+								<div id="gmaps-dashboard" class="example-map"></div>
+							</div><!--.card-->
+						</div><!--.col-->
+					</div><!--.row-->
+
+					<div class="row image-row">
+						<div class="col-md-12">
+							<div class="card card-deep-purple card-image bg-image"
+							style="background-image: url('/images/santabarbara/zoo.jpg')">
+							</div><!--.card-->
+						</div><!--.col-->
+					</div><!--.row-->
+
+					<div class="row image-row">
+						<div class="col-md-12">
+							<div class="panel">
+								<div class="panel-heading">
+									<div class="panel-title"><h4>Stats</h4></div>
+								</div><!--.panel-heading-->
+								<div class="panel-body without-padding">
+									<ul class="list-material">
+										<li class="has-action-left has-action-right">
+											<a href="#" class="visible">
+												<div class="list-action-left">
+													<i class="ion-android-car icon-circle"></i>
+												</div>
+												<div class="list-content">
+													<span class="title">Hours in the car</span>
+												</div>
+												<div class="list-action-right">
+													<span class="top">5.5</span>
+												</div>
+											</a>
+										</li>
+										<li class="has-action-left has-action-right">
+											<a href="#" class="visible">
+												<div class="list-action-left">
+													<i class="ion-ios-paw icon-circle"></i>
+												</div>
+												<div class="list-content">
+													<span class="title">Canine co-pilots</span>
+												</div>
+												<div class="list-action-right">
+													<span class="top">1</span>
+												</div>
+											</a>
+										</li>
+										<li class="has-action-left has-action-right">
+											<a href="#" class="visible">
+												<div class="list-action-left">
+													<i class="ion-calendar icon-circle"></i>
+												</div>
+												<div class="list-content">
+													<span class="title">Mornings with bagels &amp; donuts</span>
+												</div>
+												<div class="list-action-right">
+													<span class="top">3</span>
+												</div>
+											</a>
+										</li>
+										<li class="has-action-left has-action-right">
+											<a href="#" class="visible">
+												<div class="list-action-left">
+													<i class="ion-android-stopwatch icon-circle"></i>
+												</div>
+												<div class="list-content">
+													<span class="title">Hours clocked on trampolines</span>
+												</div>
+												<div class="list-action-right">
+													<span class="top">6+</span>
+												</div>
+											</a>
+										</li>
+										<li class="has-action-left has-action-right">
+											<a href="#" class="visible">
+												<div class="list-action-left">
+													<i class="ion-android-walk icon-circle"></i>
+												</div>
+												<div class="list-content">
+													<span class="title">Average steps per day</span>
+												</div>
+												<div class="list-action-right">
+													<span class="top">12,000</span>
+												</div>
+											</a>
+										</li>
+										<li class="has-action-left has-action-right">
+											<a href="#" class="visible">
+												<div class="list-action-left">
+													<i class="ion-android-calendar icon-circle"></i>
+												</div>
+												<div class="list-content">
+													<span class="title">Nights in sleeping bags with buddies</span>
+												</div>
+												<div class="list-action-right">
+													<span class="top">3</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div><!--.panel-body-->
+							</div><!--.panel-->
+						</div><!--.col-->
+
+					</div><!--.row-->
+				</div><!--.col-->
+			</div><!--.row-->
+			<div class="row image-row">
+				<div class="col-md-4">
+					<div class="card card-deep-purple card-image bg-image"
+					style="background-image: url('/images/santabarbara/suitedup.jpg')">
+					</div><!--.card-->
+				</div><!--.col-->
+				<div class="col-md-4">
+					<div class="card card-deep-purple card-image bg-image"
+					style="background-image: url('/images/santabarbara/iggy.jpg')">
+					</div><!--.card-->
+				</div><!--.col-->
+				<div class="col-md-4">
+					<div class="card card-deep-purple card-image bg-image"
+					style="background-image: url('/images/santabarbara/spatime.jpg')">
+					</div><!--.card-->
+				</div><!--.col-->
+
+			</div><!--.row-->
+		</div><!--.display-animation-->
